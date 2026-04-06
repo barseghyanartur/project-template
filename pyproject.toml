@@ -28,8 +28,9 @@ keywords = [
 ]
 
 [project.scripts]
-# TODO: Replace with your script entry point, e.g.: myscript = "{{ package_name }}.cli:main"
- "{{ project_name }}" = "{{ package_name }}.cli:main"
+# TODO: Replace with your actual script name, e.g.:
+# my-tool = "{{ package_name }}.cli:main"
+"{{ project_name }}" = "{{ package_name }}.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/{{ github_username }}/{{ github_repo }}/"

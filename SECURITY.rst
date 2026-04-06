@@ -31,8 +31,8 @@ support. It is recommended to use the latest version.
 .. note::
 
     For example, during the development cycle leading to the release
-    of ``{{ project_name }}`` 0.17.x, support will be provided
-    for ``{{ project_name }}`` 0.16.x.
+    of ``{{ project_name }}`` X.Y.x, support will be provided
+    for ``{{ project_name }}`` X.Z.x.
 
-    Upon the release of ``{{ project_name }}`` 0.18.x, security support
-    for ``{{ project_name }}`` 0.16.x will end.
+    Upon the release of ``{{ project_name }}`` X.W.x, security support
+    for ``{{ project_name }}`` X.Z.x will end.

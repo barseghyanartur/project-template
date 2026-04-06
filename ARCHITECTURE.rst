@@ -119,7 +119,7 @@ Exception Hierarchy
 
 .. code-block:: text
 
-    {{ project_name | capitalize }}Error (base)
+    {{ ErrorBaseClass }} (base)
     ├── SpecificError1
     ├── SpecificError2
     └── ...

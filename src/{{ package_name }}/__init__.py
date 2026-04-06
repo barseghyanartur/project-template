@@ -7,6 +7,7 @@ __copyright__ = "Copyright {{ current_year }} {{ author_name }}"
 __license__ = "MIT"
 __version__ = "0.1.0"
 
-__all__ = [
-    "main",
-]
+# TODO: Export your public API here.
+# from ._core import MainClass, main_function
+
+__all__: list[str] = []

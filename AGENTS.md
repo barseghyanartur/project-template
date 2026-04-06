@@ -10,6 +10,23 @@ and **developing/extending** the package itself.
 
 ---
 
+## Placeholder Legend
+
+Use these tokens throughout all files — search-and-replace to bootstrap a new project:
+
+| Token | Example | Notes |
+|---|---|---|
+| `{{ project_name }}` | `my-cool-library` | kebab-case |
+| `{{ package_name }}` | `my_cool_library` | Python identifier |
+| `{{ ErrorBaseClass }}` | `MyLibError` | PascalCase, your exception base |
+| `{{ author_name }}` | `Jane Doe` | |
+| `{{ author_email }}` | `jane@example.com` | |
+| `{{ github_username }}` | `janedoe` | |
+| `{{ github_repo }}` | `my-cool-library` | |
+| `{{ current_year }}` | `2026` | |
+
+---
+
 ## 1. Project Mission (Never Deviate)
 
 > {{ project_description }}
@@ -45,13 +62,13 @@ result = instance.run(data)
 
 ### Exception handling
 
-All {{ project_name }} exceptions inherit from `{{ project_name | capitalize }}Error`:
+All {{ project_name }} exceptions inherit from `{{ ErrorBaseClass }}`:
 
 <!-- pytestfixture: my_fixture -->
 ```python name=test_exception_handling
 from {{ package_name }} import (
     main_function,
-    {{ project_name | capitalize }}Error,
+    {{ ErrorBaseClass }},
     SpecificError1,
     SpecificError2,
 )
@@ -62,7 +79,7 @@ except SpecificError1:
     ...
 except SpecificError2:
     ...
-except {{ project_name | capitalize }}Error:
+except {{ ErrorBaseClass }}:
     # catch-all for any {{ project_name }} error
     ...
 ```
