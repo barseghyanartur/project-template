@@ -1,0 +1,3 @@
+"""
+Test suite for {{ package_name }}.
+"""
