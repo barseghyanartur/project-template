@@ -156,6 +156,7 @@ AGENTS.md uses executable code blocks with `name=<test_name>` attributes:
 
 ````markdown
 <!-- pytestfixture: my_fixture -->
+<!-- TODO: Replace my_fixture with your actual fixture name from conftest.py -->
 ```python name=test_example
 from {{ package_name }} import main_function
 
