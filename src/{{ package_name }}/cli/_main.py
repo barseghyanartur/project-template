@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import argparse
 import sys
-from typing import NoReturn
 
 
 def main() -> int | None:

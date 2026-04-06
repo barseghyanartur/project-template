@@ -10,5 +10,6 @@ import pytest
 @pytest.fixture()
 def my_fixture(tmp_path):
     """My_fixture example."""
-    something = ...
+    # TODO: mock stuff, do other things that your tests need to run properly
+    something = "some value"
     return something
